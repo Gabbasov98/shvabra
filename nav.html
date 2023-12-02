@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты
+        </a>
+        <a href="contacts2.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты - отправлено
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            Новости
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            Новости - Страница публикации
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            Доставка и оплата
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            Страница не найдена
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика конфиденциальности
+        </a>
+
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог (общий)
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог - Аккумуляторные батареи и зарядные устройства
+        </a>
+        <a href="catalog3.html" style="display: block; margin-bottom: 20px;">
+            Каталог - Расходные материалы для уборки
+        </a>
+        <a href="catalog4.html" style="display: block; margin-bottom: 20px;">
+            Каталог - Уборочное оборудование
+        </a>
+        <a href="catalog5.html" style="display: block; margin-bottom: 20px;">
+            Каталог - Уборочный и хозяйственный инвентарь
+        </a>
+        <a href="catalog6.html" style="display: block; margin-bottom: 20px;">
+            Каталог - Санитарно-гигиеническая продукция
+        </a>
+        <a href="catalog7.html" style="display: block; margin-bottom: 20px;">
+            Каталог - Профессиональная химия и дозирующие системы
+        </a>
+        <a href="catalog8.html" style="display: block; margin-bottom: 20px;">
+            Каталог - категория
+        </a>
+        <a href="catalog9.html" style="display: block; margin-bottom: 20px;">
+            Каталог - нет товаров для отображения
+        </a>
+        <a href="catalog10.html" style="display: block; margin-bottom: 20px;">
+            Каталог - нет товаров в категории
+        </a>
+        <a href="manufacture.html" style="display: block; margin-bottom: 20px;">
+            Производители
+        </a>
+        <a href="catalog11.html" style="display: block; margin-bottom: 20px;">
+            Производители - страница товаров одного производителя
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска
+        </a>
+        <a href="search-empty.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска - Нет результатов
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="catalog-item2.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара - (не авторизован)
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары
+        </a>
+        <a href="favourite-empty.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары - Пусто
+        </a>
+        <a href="compare.html" style="display: block; margin-bottom: 20px;">
+            Сравнение
+        </a>
+        <a href="compare-empty.html" style="display: block; margin-bottom: 20px;">
+            Сравнение - Пусто
+        </a>
+
+
+
+
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина товаров
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина товаров (Пусто)
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа
+        </a>
+        <a href="order-thank.html" style="display: block; margin-bottom: 20px;">
+            Спасибо за заказ
+        </a>
+
+
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="reg2.html" style="display: block; margin-bottom: 20px;">
+            Регистрация с ошибками
+        </a>
+        <a href="pass-recover.html" style="display: block; margin-bottom: 20px;">
+            Восстановить пароль
+        </a>
+        <a href="pass-recover2.html" style="display: block; margin-bottom: 20px;">
+            Восстановить пароль - Шаг 2
+        </a>
+        <a href="pass-recover3.html" style="display: block; margin-bottom: 20px;">
+            Восстановить пароль - Шаг 3
+        </a>
+
+
+        <a href="profile.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Данные
+        </a>
+        <a href="profile2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Данные (нет адреса)
+        </a>
+        <a href="pass-change.html" style="display: block; margin-bottom: 20px;">
+            Смена пароля
+        </a>
+        <a href="organizations.html" style="display: block; margin-bottom: 20px;">
+            Мои организации
+        </a>
+        <a href="organization-edit.html" style="display: block; margin-bottom: 20px;">
+            Мои организации - Редактировать данные
+        </a>
+        <a href="organization-add.html" style="display: block; margin-bottom: 20px;">
+            Добавить организацию
+        </a>
+        <a href="organization-add2.html" style="display: block; margin-bottom: 20px;">
+            Добавить организацию (Выдача и потверждение)
+        </a>
+
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            Активные заказы
+        </a>
+        <a href="orders-empty.html" style="display: block; margin-bottom: 20px;">
+            Активные заказы (заказов нет)
+        </a>
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            Страница заказа
+        </a>
+        <a href="orders-history.html" style="display: block; margin-bottom: 20px;">
+            История заказов
+        </a>
+        <a href="order-item2.html" style="display: block; margin-bottom: 20px;">
+            Архивный заказ
+        </a>
+        <a href="order-repeat.html" style="display: block; margin-bottom: 20px;">
+            Повтор заказа
+        </a>
+        <a href="price-list.html" style="display: block; margin-bottom: 20px;">
+            Рассылка прайс-листа
+        </a>
+        <a href="return-change.html" style="display: block; margin-bottom: 20px;">
+            Возврат и обмен
+        </a>
+        <a href="return-change2.html" style="display: block; margin-bottom: 20px;">
+            Возврат и обмен (поиск)
+        </a>
+        <a href="recover.html" style="display: block; margin-bottom: 20px;">
+            Диагностика и ремонт
+        </a>
+        <a href="appeals.html" style="display: block; margin-bottom: 20px;">
+            Мои обращения
+        </a>
+        <a href="appeals2.html" style="display: block; margin-bottom: 20px;">
+            Мои обращения 2
+        </a>
+        <a href="ticket.html" style="display: block; margin-bottom: 20px;">
+            Страница тикета
+        </a>
+        <a href="faq.html" style="display: block; margin-bottom: 20px;">
+            Вопросы и ответы
+        </a>
+
+
+
+
+        <button data-modal="orderModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заказать в 1 клик
+        </button>
+        <button data-modal="leasingModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Рассчитать лизинг оборудования
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Отзыв успешно отправлен
+        </button>
+        <button data-modal="mapModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Адрес склада
+        </button>
+
+
+        <code>
+
+            @@include
+            ('components/page-blocks/_filter-slider.html',{ <br>
+            "start1":"0", <br>
+            "start2":"30000", <br>
+            "min":"1000", <br>
+            "max":"100000", <br>
+            })
+
+        </code>
+    </div>
+
+
+
+
+
+
+
+
+    <!--  -->
+    <div class="cookie-modal _active">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__title text19 text18-tablet">
+                        Сайт использует Cookie
+                    </div>
+                    <div class="cookie-modal__desc">
+                        Используя данный сайт, вы даете согласие на использование файлов cookie, данных об IP-адресе и местоположении, помогающих нам сделать его удобнее для вас.
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn m-btn-red-outline">
+                        <span>Принять и закрыть</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text34 text20-tablet font2 extra-bold-text">
+                    Заказать в 1 клик
+                </div>
+            </div>
+
+            <div class="modal-product">
+                <div class="modal-product__img">
+                    <img src="img/modal-product-img.png" alt="">
+                </div>
+                <div class="modal-product__content">
+                    <div class="modal-product__title">
+                        Аппарат для чистки лестниц и эскалаторов Karcherprof BD 17/5
+                    </div>
+                    <div class="product-prices">
+                        <div class="product-prices__item">
+                            <div class="product-prices__old">
+                                1 699 р.
+                            </div>
+                        </div>
+                        <div class="product-prices__item">
+                            <div class="product-prices__current">
+                                6 400 р.
+                            </div>
+                            <div class="m-badge _sale-badge _green"><span>-5%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя: <span>*</span>
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона: <span>*</span>
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-red m-btn-normal">
+                        <span>Заказать</span>
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check _big">
+                        <input type="checkbox">
+                        <label><span>Согласен с политикой конфиденциальности и обработкой персональных данных</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="leasingModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text34 text20-tablet font2 extra-bold-text">
+                    Рассчитать лизинг оборудования
+                </div>
+            </div>
+
+            <div class="modal-product">
+                <div class="modal-product__img">
+                    <img src="img/modal-product-img.png" alt="">
+                </div>
+                <div class="modal-product__content">
+                    <div class="modal-product__title">
+                        Аппарат для чистки лестниц и эскалаторов Karcherprof BD 17/5
+                    </div>
+                    <div class="product-prices">
+                        <div class="product-prices__item">
+                            <div class="product-prices__old">
+                                1 699 р.
+                            </div>
+                        </div>
+                        <div class="product-prices__item">
+                            <div class="product-prices__current">
+                                6 400 р.
+                            </div>
+                            <div class="m-badge _sale-badge _green"><span>-5%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя: <span>*</span>
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email" placeholder="Электронный адрес">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона: <span>*</span>
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-red m-btn-normal">
+                        <span>Рассчитать</span>
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check _big">
+                        <input type="checkbox">
+                        <label><span>Согласен с политикой конфиденциальности и обработкой персональных данных</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <img src="img/success.svg" alt="" class="thank-form__img">
+            <div class="text34 text20-tablet font2 extra-bold-text">
+                Отзыв успешно отправлен
+            </div>
+            <div class="thank-form__text">
+                <div class="text15 text14-tablet">
+                    Спасибо за отзыв о товаре “<b>Поломоечная машина Vinner Myer 700R - L100</b>”. Ваш отзыв будет опубликован после проверки модератором.
+                </div>
+            </div>
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal map-modal" id="mapModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="text18 text14-tablet medium-text">
+                Адрес склада в г. Химки ул. Заводская д.2
+            </div>
+
+            <div class="map" data-cord1="55.906138" data-cord2="37.428630"></div>
+
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

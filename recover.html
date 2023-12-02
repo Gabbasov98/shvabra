@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Личный кабинет</title>
+</head>
+
+
+<body class="m-page _open-profile-menu2">
+    <div class="wrapper">
+        <header class="header">
+            <div class="mob-menu header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="header-city _flex">
+                            <img src="img/map-pin.svg" alt="" class="header-city__icon">
+                            <div class="header-city__title text14">Москва</div>
+                            <div class="header-city__desc">
+                                <span class="text13">Доставка по всей России</span>
+                            </div>
+                        </div>
+
+                        <div class="menu">
+                            <div class="container">
+                                <a href="" class="menu__catalog">
+                                    <span class="text15">Каталог товаров</span>
+                                    <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.49497 5.99498C6.76834 5.72161 6.76834 5.27839 6.49497 5.00503L2.0402 0.550251C1.76684 0.276884 1.32362 0.276884 1.05025 0.550251C0.776887 0.823618 0.776887 1.26683 1.05025 1.5402L5.01005 5.5L1.05025 9.4598C0.776884 9.73316 0.776884 10.1764 1.05025 10.4497C1.32362 10.7231 1.76683 10.7231 2.0402 10.4497L6.49497 5.99498ZM5 6.2L6 6.2L6 4.8L5 4.8L5 6.2Z" fill="#DB2B1F" />
+                                    </svg>
+                                </a>
+                                <nav class="nav">
+                                    <a href="" class="nav__link"><span>О компании</span></a>
+                                    <a href="" class="nav__link"><span>Производители</span></a>
+                                    <a href="" class="nav__link"><span>Лизинг</span></a>
+                                    <a href="" class="nav__link"><span>Программа лояльности</span></a>
+                                    <a href="" class="nav__link"><span>Акции и скидки</span></a>
+                                    <a href="" class="nav__link"><span>Юридическим лицам</span></a>
+                                    <a href="" class="nav__link"><span>Доставка и оплата</span></a>
+                                    <a href="" class="nav__link"><span>Сервисный центр </span></a>
+                                    <a href="" class="nav__link"><span>Контакты</span></a>
+
+                                    <div class="tablet-menu">
+                                        <div class="tablet-menu__show">
+                                            <span class="text14">Еще</span>
+                                            <img src="img/more.svg" alt="">
+                                        </div>
+                                        <div class="tablet-menu__links"></div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="header-contacts _flex">
+                            <a href="mailto:order@schvabra.net" class="header-contacts__mail _flex">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.04297 6.33332C3.04297 5.8913 3.21856 5.46737 3.53112 5.15481C3.84368 4.84225 4.26761 4.66666 4.70964 4.66666H16.3763C16.8183 4.66666 17.2423 4.84225 17.5548 5.15481C17.8674 5.46737 18.043 5.8913 18.043 6.33332V14.6667C18.043 15.1087 17.8674 15.5326 17.5548 15.8452C17.2423 16.1577 16.8183 16.3333 16.3763 16.3333H4.70964C4.26761 16.3333 3.84368 16.1577 3.53112 15.8452C3.21856 15.5326 3.04297 15.1087 3.04297 14.6667V6.33332Z" stroke="#6F787A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.04297 6.33334L10.543 11.3333L18.043 6.33334" stroke="#6F787A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="text14">order@schvabra.net</span>
+                            </a>
+                            <div class="header-contacts__time">
+                                <div class="text13">Звонок бесплатный 10:00 – 22:00</div>
+                            </div>
+                            <a href="tel:+74956471000" class="header-contacts__phone _flex">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.14265 1.42848L0.900009 1.89988C0.900009 1.89988 0.428604 6.14252 5.14265 10.8566C9.85669 15.5706 14.1003 15.1001 14.1003 15.1001L14.5717 10.8575L11.2709 8.97187L9.62145 10.6213C9.62145 10.6213 8.44294 10.3856 7.02873 8.97141C5.61451 7.55719 5.37881 6.37868 5.37881 6.37868L7.02827 4.72923L5.14265 1.42848Z" stroke="#6F787A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="text15">+7 (495) 647-10-00</span>
+                            </a>
+                            <button class="header-contacts__call">
+                                <span class="text14 _view1">Заказать звонок</span>
+                                <span class="text14 _view2">Обратный звонок</span>
+                            </button>
+                        </div>
+
+                        <div class="header-auth _flex">
+                            <img class="header-auth__icon" src="img/key.svg" alt="">
+                            <a href="" class="text13">
+                                Войти / Зарегистрироваться
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mob-menu__bg _backdrop _toggle-mob-menu"></div>
+            <button class="mob-menu__close close-btn _toggle-mob-menu">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.7" clip-path="url(#clip0_417_41080)">
+                        <path d="M13.5 4.5L4.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4.5 4.5L13.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </svg>
+            </button>
+
+            <div class="header-center">
+                <div class="container">
+                    <div class="header-center__inner _flex">
+                        <button class="burger _toggle-mob-menu">
+                            <img src="img/burger2.svg" alt="">
+                        </button>
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                        <button class="header__mob-call">
+                            <img src="img/phone.svg" alt="">
+                        </button>
+                        <a href="" class="header__catalog m-btn m-btn-red">
+                            <img src="img/burger.svg" alt="Бургер">
+                            <span>Каталог</span>
+                        </a>
+
+                        <div class="header-search m-search">
+                            <fieldset class="search-field header-search__field">
+                                <input class="_search-field" type="text" placeholder="Поиск среди 10 000 товаров" data-placeholder="Поиск среди 10 000 товаров" data-placeholder2="Поиск...">
+                                <button class="search-field__btn">
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 18.5L13.8917 14.3916M16.1111 9.0556C16.1111 13.2284 12.7284 16.6112 8.55555 16.6112C4.38273 16.6112 1 13.2284 1 9.0556C1 4.88276 4.38273 1.5 8.55555 1.5C12.7284 1.5 16.1111 4.88276 16.1111 9.0556Z" stroke="#0B1315" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </fieldset>
+
+
+
+                            <button class="header-search__close m-btn m-btn-blue-outline">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.2 1.03311L1 4.23311L4.2 7.43311" stroke="#0B3B47" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 4.23347H10.6C14.1349 4.23347 17 6.85961 17 10.1001V10.1001C17 13.3407 14.1349 15.9668 10.6 15.9668H2.06667" stroke="#0B3B47" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+
+                            <div class="m-search__result">
+
+
+                                <div class="m-search__items">
+                                    <a href="" class="search-item">
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text15">
+                                                <span>Поломо</span>ечная машина <span>VinnerMye</span>r R-100 700SL
+                                            </div>
+                                            <div class="search-item__price text16">
+                                                124 300 р.
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-red-outline">
+                                            <span>Перейти</span>
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 1L6.5 6L1.5 11" stroke="#DB2B1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text15">
+                                                <span>Поломо</span>ечная машина <span>VinnerMye</span>r R700
+                                            </div>
+                                            <div class="search-item__price text16">
+                                                124 300 р.
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-red-outline">
+                                            <span>Перейти</span>
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 1L6.5 6L1.5 11" stroke="#DB2B1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text15">
+                                                <span>Поломо</span>ечная машина <span>VinnerMye</span>r R700
+                                            </div>
+                                            <div class="search-item__price text16">
+                                                124 300 р.
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-red-outline">
+                                            <span>Перейти</span>
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 1L6.5 6L1.5 11" stroke="#DB2B1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text15">
+                                                <span>Поломо</span>ечная машина <span>VinnerMye</span>r R700
+                                            </div>
+                                            <div class="search-item__price text16">
+                                                124 300 р.
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-red-outline">
+                                            <span>Перейти</span>
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 1L6.5 6L1.5 11" stroke="#DB2B1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="m-search__nav">
+                                    <a href="" class="m-search__link m-btn">
+                                        <span class="text15">Перейти ко всем результатам</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-action">
+
+
+                            <button class="_toggle-profile-menu header-action__btn _hide-desktop">
+                                <div class="header-action__btn-icon">
+                                    <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.375 14C3.375 15.3296 3.63689 16.6462 4.14572 17.8747C4.65455 19.1031 5.40035 20.2193 6.34054 21.1595C7.28074 22.0996 8.39691 22.8455 9.62533 23.3543C10.8538 23.8631 12.1704 24.125 13.5 24.125C14.8296 24.125 16.1462 23.8631 17.3747 23.3543C18.6031 22.8455 19.7193 22.0996 20.6595 21.1595C21.5996 20.2193 22.3455 19.1031 22.8543 17.8747C23.3631 16.6462 23.625 15.3296 23.625 14C23.625 12.6704 23.3631 11.3538 22.8543 10.1253C22.3455 8.89691 21.5996 7.78074 20.6595 6.84054C19.7193 5.90035 18.6031 5.15455 17.3747 4.64572C16.1462 4.13689 14.8296 3.875 13.5 3.875C12.1704 3.875 10.8538 4.13689 9.62533 4.64572C8.39691 5.15455 7.28074 5.90035 6.34054 6.84054C5.40035 7.78074 4.65455 8.89691 4.14572 10.1253C3.63689 11.3538 3.375 12.6704 3.375 14Z" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.125 11.75C10.125 12.6451 10.4806 13.5036 11.1135 14.1365C11.7464 14.7694 12.6049 15.125 13.5 15.125C14.3951 15.125 15.2536 14.7694 15.8865 14.1365C16.5194 13.5036 16.875 12.6451 16.875 11.75C16.875 10.8549 16.5194 9.99645 15.8865 9.36351C15.2536 8.73058 14.3951 8.375 13.5 8.375C12.6049 8.375 11.7464 8.73058 11.1135 9.36351C10.4806 9.99645 10.125 10.8549 10.125 11.75Z" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.93896 21.7051C7.21741 20.7784 7.78718 19.9661 8.56374 19.3887C9.3403 18.8114 10.2823 18.4997 11.25 18.5H15.75C16.7189 18.4997 17.662 18.8121 18.4391 19.3908C19.2163 19.9694 19.7859 20.7835 20.0632 21.7119" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <a href="" class="header-action__btn">
+                                <div class="header-action__btn-icon">
+                                    <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="5.57161" y1="4.2" x2="19.9716" y2="4.2" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <line x1="5.57161" y1="12.2" x2="15.4002" y2="12.2" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <line x1="20.0003" y1="12.2" x2="26.4003" y2="12.2" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <line x1="23.4003" y1="15.2" x2="23.4003" y2="8.8" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <line x1="5.57161" y1="20.2" x2="19.9716" y2="20.2" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="text13">Сравнение</span>
+                            </a>
+                            <a href="" class="header-action__btn header-action__btn--favourite">
+                                <div class="header-action__btn-icon">
+                                    <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.2002 9.25C17.2002 9.25 18.4206 5 22.2849 5C25.2951 5 27.2002 7.43661 27.2002 10.3232C27.2002 14.3154 23.2314 16.9589 17.2002 22C11.1691 16.9589 7.2002 14.3154 7.2002 10.3232C7.2002 7.43661 9.10528 5 12.1154 5C15.9799 5 17.2002 9.25 17.2002 9.25Z" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="_pin"><span>3</span></div>
+                                </div>
+                                <span class="text13">Избранное</span>
+                            </a>
+                            <a href="" class="header-action__btn header-action__btn--cart">
+                                <div class="header-action__btn-icon">
+                                    <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.4335 19.3158C20.421 19.3158 19.6002 20.1405 19.6002 21.1579C19.6002 22.1753 20.421 23 21.4335 23C22.4461 23 23.2669 22.1753 23.2669 21.1579C23.2669 20.1405 22.4461 19.3158 21.4335 19.3158ZM21.4335 19.3158L12.6335 19.3158C11.6212 19.3158 10.8002 18.4909 10.8002 17.4737C10.8002 16.4565 11.6212 15.6316 12.6335 15.6316M8.6002 6.78946H26.2002C26.2002 6.78946 25.1343 11.0738 24.4864 13.6782C24.2008 14.8262 23.1741 15.6316 21.9964 15.6316C19.5089 15.6316 15.2915 15.6316 12.804 15.6316C11.6263 15.6316 10.5996 14.8262 10.314 13.6782C9.6661 11.0738 8.6002 6.78946 8.6002 6.78946ZM8.6002 6.78946C8.6002 6.78946 8.21885 6.36171 7.84485 4.85928C7.42685 3.17896 5.92427 2 4.2002 2M15.2002 21.1579C15.2002 22.1753 14.3794 23 13.3668 23C12.3543 23 11.5335 22.1753 11.5335 21.1579C11.5335 20.1405 12.3543 19.3158 13.3668 19.3158C14.3794 19.3158 15.2002 20.1405 15.2002 21.1579Z" stroke="#0B1315" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="_pin"><span>7</span></div>
+                                </div>
+                                <span class="text13">Корзина</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </header>
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <a href="" class="breadcrumbs__item"><span>Швабра.Net</span></a>
+                    <div class="breadcrumbs__item"><span>Личный кабинет</span></div>
+                </div>
+            </div>
+
+            <div class="lk">
+                <div class="container">
+                    <div class="lk__inner">
+                        <div class="lk__sidebar">
+                            <div class="lk-menu">
+                                <div class="lk-menu__title">
+                                    <div class="text20 text17-tablet font2 bold-text">
+                                        <div class="_view1">Личный кабинет</div>
+                                        <div class="_view2">Здравствуйте, Николай!</div>
+                                    </div>
+                                </div>
+
+                                <div class="lk-menu__items">
+                                    <div class="menu-group">
+                                        <div class="menu-group__show">
+                                            <div class="menu-group__icon">
+                                                <img src="img/user2.svg" alt="">
+                                            </div>
+                                            <div class="menu-group__title">
+                                                Профиль
+                                            </div>
+                                        </div>
+                                        <div class="menu-group__hidden">
+                                            <a href="" class="menu-group__link ">
+                                                <span>Личные данные</span>
+                                            </a>
+                                            <a href="" class="menu-group__link ">
+                                                <span>Смена пароля</span>
+                                            </a>
+                                            <a href="" class="menu-group__link ">
+                                                <span>Мои организации</span>
+                                            </a>
+                                            <a href="" class="menu-group__link ">
+                                                <span>Добавить организацию</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group">
+                                        <div class="menu-group__show">
+                                            <div class="menu-group__icon">
+                                                <img src="img/order.svg" alt="">
+                                            </div>
+                                            <div class="menu-group__title">
+                                                Сервис
+                                            </div>
+                                        </div>
+                                        <div class="menu-group__hidden">
+                                            <a href="" class="menu-group__link ">
+                                                <span>Активные заказы</span>
+                                            </a>
+                                            <a href="" class="menu-group__link ">
+                                                <span>История заказов</span>
+                                            </a>
+                                            <a href="" class="menu-group__link ">
+                                                <span>Рассылка прайс-листа</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group">
+                                        <div class="menu-group__show">
+                                            <div class="menu-group__icon">
+                                                <img src="img/setting.svg" alt="">
+                                            </div>
+                                            <div class="menu-group__title">
+                                                Сервис
+                                            </div>
+                                        </div>
+                                        <div class="menu-group__hidden">
+                                            <a href="" class="menu-group__link ">
+                                                <span>Возврат и обмен</span>
+                                            </a>
+                                            <a href="" class="menu-group__link _active">
+                                                <span>Диагностика и ремонт</span>
+                                            </a>
+                                            <a href="" class="menu-group__link ">
+                                                <span>Мои обращения</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group">
+                                        <div class="menu-group__show">
+                                            <div class="menu-group__icon">
+                                                <img src="img/info.svg" alt="">
+                                            </div>
+                                            <div class="menu-group__title">
+                                                Информация
+                                            </div>
+                                        </div>
+                                        <div class="menu-group__hidden">
+                                            <a href="" class="menu-group__link ">
+                                                <span>Вопросы и ответы</span>
+                                            </a>
+                                            <a href="" class="menu-group__link ">
+                                                <span>Лизинг от сервиса Arenza</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lk-menu__bg _backdrop _toggle-profile-menu"></div>
+                            <button class="lk-menu__close close-btn _toggle-profile-menu">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7" clip-path="url(#clip0_417_41080)">
+                                        <path d="M13.5 4.5L4.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.5 4.5L13.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+
+                            <div class="lk-menu-tablet _toggle-profile-menu">
+                                <div class="lk-menu-tablet__item">
+                                    <div class="menu-group__icon">
+                                        <img src="img/user2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="lk-menu-tablet__item">
+                                    <div class="menu-group__icon">
+                                        <img src="img/order.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="lk-menu-tablet__item">
+                                    <div class="menu-group__icon">
+                                        <img src="img/setting.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="lk-menu-tablet__item">
+                                    <div class="menu-group__icon">
+                                        <img src="img/info.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="lk__content">
+                            <div class="user-data">
+                                <div class="text34 text20-tablet font2 extra-bold-text">
+                                    Диагностика и ремонт
+                                </div>
+                                <div class="return-change">
+                                    <div class="return-guide">
+                                        <div class="text20 text17-tablet bold-text">
+                                            Как сдать товар в ремонт или диагностику
+                                        </div>
+                                        <div class="return-guide__items">
+                                            <div class="advantage-item">
+                                                <div class="advantage-item__icon">
+                                                    <img src="img/advantages-icon5.svg" alt="Подготовьтесь зараннее">
+                                                </div>
+                                                <div class="advantage-item__content">
+                                                    <div class="advantage-item__title text18 medium-text">Подготовьтесь зараннее</div>
+                                                    <div class="advantage-item__desc text15">
+                                                        <p>Убедитесь, что гарантийный талон заполнен, или заполните его по образцам. Ознакомьтесь с правилами работы сервисного центра.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="advantage-item">
+                                                <div class="advantage-item__icon">
+                                                    <img src="img/advantages-icon9.svg" alt="@@title">
+                                                </div>
+                                                <div class="advantage-item__content">
+                                                    <div class="advantage-item__title text18 medium-text">
+                                                        Возьмите с собой
+                                                    </div>
+                                                    <div class="advantage-item__desc text15">
+                                                        <ul>
+                                                            <li>гарантийный талон;</li>
+                                                            <li>полную комплектацию товара;</li>
+                                                            <li>чек или номер заказа.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="advantage-item">
+                                                <div class="advantage-item__icon">
+                                                    <img src="img/advantages-icon7.svg" alt="@@title">
+                                                </div>
+                                                <div class="advantage-item__content">
+                                                    <div class="advantage-item__title text18 medium-text">
+                                                        Сдайте товар
+                                                    </div>
+                                                    <div class="advantage-item__desc text15">
+                                                        <ul>
+                                                            <li>в сервисный центр;</li>
+                                                            <li>в пункт выдачи заказов;</li>
+                                                            <li>через транспортную компанию;</li>
+                                                        </ul>
+                                                        <p>вы получите акт приёма и номер зарегистрированного сообщения</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="advantage-item">
+                                                <div class="advantage-item__icon">
+                                                    <img src="img/advantages-icon8.svg" alt="Получите товар">
+                                                </div>
+                                                <div class="advantage-item__content">
+                                                    <div class="advantage-item__title text18 medium-text">Получите товар</div>
+                                                    <div class="advantage-item__desc text15">
+                                                        <p>Обратитесь туда, куда вы его сдавали. Предъявите паспорт и акт приёма товара.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="info-message">
+                                        <img src="img/info-icon.svg" alt="">
+                                        <div class="info-message__text text15 text14-mob">
+                                            Статусы ремонта вы можете отслеживать в разделе “<a href="">Мои обращения</a>”
+                                        </div>
+                                    </div>
+
+                                    <div class="return-duration text _small">
+                                        <h4>Как долго ждать товар из ремонта?</h4>
+                                        <p>Сроки ожидания товара из ремонта зависят от характера поломки и доступности запчастей. Мы стараемся решать проблемы как можно быстрее, но точные сроки могут варьироваться. Подробности уточняйте у нашей службы поддержки.</p>
+                                    </div>
+
+                                    <div class="track-hint">
+                                        <div class="text18 text14-tablet medium-text">
+                                            Остались вопросы по заказу?
+                                        </div>
+                                        <div class="track-hint__desc text15 text14-tablet">
+                                            <button class="track-hint__btn">Оставьте заявку</button>, оператор Службы поддержки свяжется с вами.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top _flex">
+                    <a href="" class="footer__logo">
+                        <img src="img/logo2.svg" alt="">
+                    </a>
+                    <div class="footer__info _flex">
+                        <div class="footer__c"><span class="text14">ООО “Оптовые поставки”</span></div>
+                        <div class="footer__inn"><span class="text14">ИНН 6311142383</span></div>
+                    </div>
+
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5624 9.88506L7.26465 14.0731C7.69065 14.0731 7.87515 13.8901 8.0964 13.6703L10.0937 11.7616L14.2322 14.7923C14.9912 15.2153 15.5259 14.9926 15.7307 14.0941L18.4472 1.36508L18.4479 1.36433C18.6887 0.242328 18.0422 -0.196422 17.3027 0.0788276L1.33515 6.19208C0.245395 6.61508 0.261895 7.22258 1.1499 7.49783L5.23215 8.76756L14.7144 2.83433C15.1607 2.53883 15.5664 2.70233 15.2327 2.99783L7.5624 9.88506Z" fill="#E7EEF1" fill-opacity="0.8" />
+                            </svg>
+                        </a>
+                        <a href="" class="socials__item">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.00225 0H8.99775C4.03537 0 0 4.0365 0 9C0 10.9688 0.6345 12.7935 1.71337 14.2751L0.59175 17.6186L4.05113 16.5128C5.47425 17.4555 7.17188 18 9.00225 18C13.9646 18 18 13.9624 18 9C18 4.03763 13.9646 0 9.00225 0ZM14.2391 12.7091C14.022 13.3222 13.1603 13.8307 12.4729 13.9792C12.0026 14.0794 11.3884 14.1593 9.32063 13.302C6.67575 12.2063 4.9725 9.51862 4.83975 9.34425C4.71263 9.16988 3.771 7.92113 3.771 6.62963C3.771 5.33813 4.42688 4.70925 4.69125 4.43925C4.90838 4.21763 5.26725 4.11637 5.6115 4.11637C5.72288 4.11637 5.823 4.122 5.913 4.1265C6.17737 4.13775 6.31012 4.1535 6.4845 4.57088C6.70162 5.094 7.23037 6.3855 7.29338 6.51825C7.3575 6.651 7.42163 6.831 7.33162 7.00537C7.24725 7.18537 7.173 7.26525 7.04025 7.41825C6.9075 7.57125 6.7815 7.68825 6.64875 7.8525C6.52725 7.99538 6.39 8.14837 6.543 8.41275C6.696 8.6715 7.22475 9.53438 8.00325 10.2274C9.00787 11.1217 9.82237 11.4075 10.1137 11.529C10.3309 11.619 10.5896 11.5976 10.7483 11.4289C10.9496 11.2118 11.1982 10.8518 11.4514 10.4974C11.6314 10.2431 11.8586 10.2116 12.0971 10.3016C12.3401 10.386 13.626 11.0216 13.8904 11.1532C14.1547 11.286 14.3291 11.349 14.3932 11.4604C14.4563 11.5718 14.4563 12.0949 14.2391 12.7091Z" fill="#E7EEF1" fill-opacity="0.8" />
+                            </svg>
+                        </a>
+                        <a href="" class="socials__item">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.1649 2.61335C16.9676 1.87905 16.3868 1.2982 15.6524 1.10093C14.3264 0.739258 8.98899 0.739258 8.98899 0.739258C8.98899 0.739258 3.65166 0.750217 2.32553 1.11189C1.59124 1.30916 1.01038 1.89002 0.81311 2.62431C0.462402 3.95044 0.462402 6.72322 0.462402 6.72322C0.462402 6.72322 0.462402 9.49601 0.82407 10.8331C1.02134 11.5674 1.6022 12.1483 2.3365 12.3455C3.66262 12.7072 8.99995 12.7072 8.99995 12.7072C8.99995 12.7072 14.3373 12.7072 15.6635 12.3455C16.3977 12.1483 16.9786 11.5674 17.1758 10.8331C17.5375 9.50696 17.5375 6.72322 17.5375 6.72322C17.5375 6.72322 17.5266 3.95044 17.1649 2.61335Z" fill="#E7EEF1" fill-opacity="0.8" />
+                                <path d="M7.28577 9.29267L11.7135 6.72812L7.28577 4.16357V9.29267Z" fill="black" />
+                            </svg>
+                        </a>
+                        <a href="" class="socials__item">
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.51722 1.50049L1.11121 1.50268C1.11121 1.50268 0.749912 1.48234 0.616826 1.63232C0.499397 1.76611 0.60804 1.98608 0.60804 1.98608C0.60804 1.98608 2.43138 6.3468 4.51258 8.51196C5.98375 10.0436 7.46006 10.5005 8.81922 10.5005H9.59486C10.0122 10.5005 10.1969 10.4049 10.1969 10.1907C10.1969 9.59254 10.1914 8.89306 10.7111 8.73828C11.3301 8.5535 12.2121 9.61756 13.0534 10.1665C13.5694 10.5073 14.1718 10.5005 14.1718 10.5005H16.6547C16.6547 10.5005 17.8303 10.3936 17.2721 9.51172C17.2263 9.43913 16.9471 9.01349 15.6 7.82202C14.189 6.57536 14.3768 6.77677 16.0768 4.6206C17.1114 3.30675 17.5213 2.09555 17.4237 1.74219C17.3557 1.49621 16.9592 1.50049 16.5382 1.50049C16.1167 1.50049 14.1963 1.51587 14.0048 1.51587C13.8133 1.51587 13.8171 1.51518 13.6774 1.59497C13.5407 1.67296 13.4533 1.83008 13.4533 1.83008C13.4533 1.83008 13.0284 3.26551 12.493 4.13061C11.3657 5.95441 10.7311 5.81565 10.5463 5.70166C10.1175 5.43769 10.1969 4.63982 10.1969 4.07348C10.1969 2.30608 10.4011 1.80333 9.57068 1.61255C9.29608 1.54955 9.09472 1.50709 8.39075 1.50049C7.48625 1.49209 6.96122 1.53605 6.57581 1.70703C6.28736 1.84201 6.06019 2.07855 6.19568 2.09595C6.3631 2.11754 6.74662 2.25745 6.94715 2.51782C7.2073 2.85438 7.18445 3.60986 7.18445 3.60986C7.18445 3.60986 7.34909 5.36898 6.85047 5.62695C6.50902 5.80513 6.0412 5.76326 5.03553 4.10864C4.52065 3.26093 4.11487 1.93115 4.11487 1.93115C4.11487 1.93115 4.04042 1.75228 3.90613 1.65869C3.74354 1.5447 3.51722 1.50049 3.51722 1.50049Z" fill="#E7EEF1" fill-opacity="0.8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <div class="footer-nav">
+                        <div class="footer-nav__show">
+                            <div class="footer__title">
+                                Каталог
+                            </div>
+                            <button class="footer-nav__btn">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-nav__hidden">
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link"><span>Производители</span></a>
+                                <a href="" class="footer-nav__link"><span>Поломоечные машины</span></a>
+                                <a href="" class="footer-nav__link"><span>Подметальные машины</span></a>
+                                <a href="" class="footer-nav__link"><span>Промышленные пылесосы</span></a>
+                                <a href="" class="footer-nav__link"><span>Профессиональные пылесосы</span></a>
+                                <a href="" class="footer-nav__link"><span>Коммунальные машины</span></a>
+                                <a href="" class="footer-nav__link"><span>Бытовая химия</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-nav__show">
+                            <div class="footer__title">
+                                Акции и новости
+                            </div>
+                            <button class="footer-nav__btn">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-nav__hidden">
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link"><span>Акции и скидки</span></a>
+                                <a href="" class="footer-nav__link"><span>Лизинг</span></a>
+                                <a href="" class="footer-nav__link"><span>Кредит и рассрочка</span></a>
+                                <a href="" class="footer-nav__link"><span>Программа лояльности</span></a>
+                                <a href="" class="footer-nav__link"><span>Новости</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-nav__show">
+                            <div class="footer__title">
+                                Помощь
+                            </div>
+                            <button class="footer-nav__btn">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-nav__hidden">
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link"><span>О компании</span></a>
+                                <a href="" class="footer-nav__link"><span>Контакты</span></a>
+                                <a href="" class="footer-nav__link"><span>Доставка и оплата</span></a>
+                                <a href="" class="footer-nav__link"><span>Сервисный центр</span></a>
+                                <a href="" class="footer-nav__link"><span>Юридическим лицам</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-nav__show">
+                            <div class="footer__title">
+                                Правовая информация
+                            </div>
+                            <button class="footer-nav__btn">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-nav__hidden">
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link"><span>Что такое сookies?</span></a>
+                                <a href="" class="footer-nav__link"><span>Политика конфиденциальности</span></a>
+                                <a href="" class="footer-nav__link"><span>Публичная оферта</span></a>
+                                <a href="" class="footer-nav__link"><span>Правила программы лояльности</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-contacts">
+                        <div class="footer__title">
+                            Контакты
+                        </div>
+                        <div class="footer-contacts__inner">
+                            <div class="footer-contacts__items">
+                                <div class="footer-contacts__address">
+                                    <div class="text14 medium-text">
+                                        443010, Самарская область, <br>
+                            г. Самара, Ул. Галактионовская
+                                    </div>
+                                </div>
+                                <div class="footer-contacts__mail">
+                                    <a href="mailto:order@schvabra.net" class="text16 medium-text yellow-text">order@schvabra.net</a>
+                                </div>
+                            </div>
+                            <div class="footer-contacts__items">
+                                <div class="footer-contacts__time">
+                                    <div class="text15 _view1 medium-text">
+                                        Звонок бесплатный 10:00 – 22:00
+                                    </div>
+                                    <div class="text14 _view2 medium-text">
+                                        Бесплатно с 10:00 – 22:00
+                                    </div>
+                                </div>
+                                <div class="footer-contacts__phone">
+                                    <a href="tel:+74956471000" class="text16 medium-text">+7 (495) 647-10-00</a>
+                                </div>
+                            </div>
+                            <div class="footer-contacts__items">
+                                <div class="footer-contacts__call">
+                                    <div class="text16 medium-text">
+                                        Закажите обратный звонок
+                                    </div>
+                                </div>
+                                <button class="footer-contacts__btn m-btn m-btn-red">
+                                    <span>Обратный звонок</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__protect text14">
+                        2023 © ШВАБРА.NET — все для профессиональной уборки. Все права защищены.
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="cookie-modal _active">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__title text19 text18-tablet">
+                        Сайт использует Cookie
+                    </div>
+                    <div class="cookie-modal__desc">
+                        Используя данный сайт, вы даете согласие на использование файлов cookie, данных об IP-адресе и местоположении, помогающих нам сделать его удобнее для вас.
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn m-btn-red-outline">
+                        <span>Принять и закрыть</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text34 text20-tablet font2 extra-bold-text">
+                    Заказать в 1 клик
+                </div>
+            </div>
+
+            <div class="modal-product">
+                <div class="modal-product__img">
+                    <img src="img/modal-product-img.png" alt="">
+                </div>
+                <div class="modal-product__content">
+                    <div class="modal-product__title">
+                        Аппарат для чистки лестниц и эскалаторов Karcherprof BD 17/5
+                    </div>
+                    <div class="product-prices">
+                        <div class="product-prices__item">
+                            <div class="product-prices__old">
+                                1 699 р.
+                            </div>
+                        </div>
+                        <div class="product-prices__item">
+                            <div class="product-prices__current">
+                                6 400 р.
+                            </div>
+                            <div class="m-badge _sale-badge _green"><span>-5%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя: <span>*</span>
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона: <span>*</span>
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-red m-btn-normal">
+                        <span>Заказать</span>
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check _big">
+                        <input type="checkbox">
+                        <label><span>Согласен с политикой конфиденциальности и обработкой персональных данных</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="leasingModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text34 text20-tablet font2 extra-bold-text">
+                    Рассчитать лизинг оборудования
+                </div>
+            </div>
+
+            <div class="modal-product">
+                <div class="modal-product__img">
+                    <img src="img/modal-product-img.png" alt="">
+                </div>
+                <div class="modal-product__content">
+                    <div class="modal-product__title">
+                        Аппарат для чистки лестниц и эскалаторов Karcherprof BD 17/5
+                    </div>
+                    <div class="product-prices">
+                        <div class="product-prices__item">
+                            <div class="product-prices__old">
+                                1 699 р.
+                            </div>
+                        </div>
+                        <div class="product-prices__item">
+                            <div class="product-prices__current">
+                                6 400 р.
+                            </div>
+                            <div class="m-badge _sale-badge _green"><span>-5%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя: <span>*</span>
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email" placeholder="Электронный адрес">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона: <span>*</span>
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-red m-btn-normal">
+                        <span>Рассчитать</span>
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check _big">
+                        <input type="checkbox">
+                        <label><span>Согласен с политикой конфиденциальности и обработкой персональных данных</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <img src="img/success.svg" alt="" class="thank-form__img">
+            <div class="text34 text20-tablet font2 extra-bold-text">
+                Отзыв успешно отправлен
+            </div>
+            <div class="thank-form__text">
+                <div class="text15 text14-tablet">
+                    Спасибо за отзыв о товаре “<b>Поломоечная машина Vinner Myer 700R - L100</b>”. Ваш отзыв будет опубликован после проверки модератором.
+                </div>
+            </div>
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal map-modal" id="mapModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="text18 text14-tablet medium-text">
+                Адрес склада в г. Химки ул. Заводская д.2
+            </div>
+
+            <div class="map" data-cord1="55.906138" data-cord2="37.428630"></div>
+
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
