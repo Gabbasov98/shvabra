@@ -125,7 +125,7 @@
         <a href="cart.html" style="display: block; margin-bottom: 20px;">
             Корзина товаров
         </a>
-        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+        <a href="cart-empty.html" style="display: block; margin-bottom: 20px;">
             Корзина товаров (Пусто)
         </a>
         <a href="order.html" style="display: block; margin-bottom: 20px;">
@@ -242,19 +242,11 @@
         <button data-modal="mapModal" style="border: 2px solid #000;margin-bottom: 20px;">
             Адрес склада
         </button>
+        <button data-modal="callModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заказать звонок
+        </button>
 
 
-        <code>
-
-            @@include
-            ('components/page-blocks/_filter-slider.html',{ <br>
-            "start1":"0", <br>
-            "start2":"30000", <br>
-            "min":"1000", <br>
-            "max":"100000", <br>
-            })
-
-        </code>
     </div>
 
 
@@ -285,6 +277,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="modal" id="orderModal">
         <div class="modal__bg _close-modal"></div>
@@ -336,6 +329,51 @@
                 <div class="modal-form__nav">
                     <button class="m-btn m-btn-red m-btn-normal">
                         <span>Заказать</span>
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check _big">
+                        <input type="checkbox">
+                        <label><span>Согласен с политикой конфиденциальности и обработкой персональных данных</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1 17L16.9984 1M17 17L1.00161 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="callModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top _center">
+                <div class="text34 text20-tablet font2 extra-bold-text">
+                    Заказать звонок
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя: <span>*</span>
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона: <span>*</span>
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-red m-btn-normal">
+                        <span>Перезвоните мне</span>
                     </button>
                 </div>
                 <div class="modal-form__checks">
